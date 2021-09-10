@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <head>
-    <title>Our Services Page</title>
-    <meta charset="utf-8">
+  <title>Our Services page</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
 </head>
 <body>
 <nav class="jumbotron navbar navbar-light" style="background-color: #2B3856;">
@@ -31,11 +50,13 @@
       <li><a href="Gallery.html">Gallery</a></li>
       <li><a href="Contact Us.html">Contact Us</a></li>
     </ul>
-  </div>
-    <ul class="nav navbar-nav navbar-right">
+  </div >
+    <div class="top-menu2">
+    <ul class="nav navbar-nav navbar-right list-menu">
       <li><a href="Create acccount.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="Sign in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
+  </div>
   </div>
 </nav>
 
@@ -88,12 +109,66 @@
   </div>
 </div>
 
-<div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p>
+<div class="text-center">
+  <h1>We provide: </h1>
+</div>
+
+<section class="featured-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      <img src="C:\Users\user\Desktop\youthfarm\Images\vet.jpg" alt="Milk products image" width="400" height="300">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Access to Vets</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="C:\Users\user\Desktop\youthfarm\Images\feed.jpg" alt="Milk products image" width="400" height="300">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Access to Feeds</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="C:\Users\user\Desktop\youthfarm\Images\training.jpg" alt="Milk products image" width="400" height="300">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Access to Training</h5>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+      <img src="C:\Users\user\Desktop\youthfarm\Images\loans.png" alt="Milk products image" width="400" height="300">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Savings account</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="C:\Users\user\Desktop\youthfarm\Images\savings.jpg" alt="Milk products image" width="400" height="300">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Loans to the members</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="C:\Users\user\Desktop\youthfarm\Images\tech.jpeg" alt="Milk products image" width="400" height="300">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Updates on the new technologies used in various fields of agricuture</h5>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+  
+</div>
+
+</body>
+<div class="footer">
+  <footer class="container-fluid text-center">
+  <p><p class="footer-p">&copy; 2021 YouthFarm</p></p>
+</footer>
 </div>
 
 
-
-</body>
 </html>
